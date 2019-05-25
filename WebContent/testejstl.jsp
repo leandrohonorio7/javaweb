@@ -13,7 +13,15 @@
 	<c:forEach var="cliente" items="${dao.clientes}">
 		<tr>
 			<td>${cliente.nome}</td>
-			<td>${cliente.email}</td>
+			<td>
+				<c:if test="${not empty cliente.email}">
+					<a href="mailto:${cliente.email}">${cliente.email}</a>
+				</c:if>
+				
+				<c:if test="${empty cliente.email}">
+					E-mail não informado2
+				</c:if>
+			</td>
 			<td>${cliente.endereco}</td>
 		</tr>
 	</c:forEach>

@@ -91,6 +91,7 @@ public class ClienteDao {
 			{
 				Cliente c = new Cliente();
 				c.setId(rs.getLong("id"));
+				c.setNome(rs.getString("nome"));
 				c.setEmail(rs.getString("email"));
 				c.setEndereco(rs.getString("endereco"));
 				
