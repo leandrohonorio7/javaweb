@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="mvc">
-	<input type="hidden" name="regra" value="RegraDeleteClientes" >
+	<input type="hidden" name="regra" value="RegraInserirCliente" >
 	Nome: <input type="text" name="nome"><br/>
 	E-mail: <input type="text" name="email"><br/>
 	Endereço: <input type="text" name="endereco"><br/>

@@ -26,7 +26,7 @@ public class RegraInserirCliente implements Regra{
 	
 		System.out.println("Inserindo cliente: " + client.getNome());
 
-		return "testejstl3.jsp";
+		return "/WEB-INF/pages/testejstl3.jsp";
 	}
 
 } 
